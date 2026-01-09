@@ -1,0 +1,50 @@
+[
+  {
+    "a": "perro",
+    "b": "dog"
+  },
+  {
+    "a": "gato",
+    "b": "cat"
+  },
+  {
+    "a": "casa",
+    "b": "house"
+  },
+  {
+    "a": "libro",
+    "b": "book"
+  },
+  {
+    "a": "rojo",
+    "b": "red"
+  },
+  {
+    "a": "verde",
+    "b": "green"
+  },
+  {
+    "a": "azul",
+    "b": "blue"
+  },
+  {
+    "a": "escuela",
+    "b": "school"
+  },
+  {
+    "a": "maestro",
+    "b": "teacher"
+  },
+  {
+    "a": "estudiante",
+    "b": "student"
+  },
+  {
+    "a": "comer",
+    "b": "eat"
+  },
+  {
+    "a": "beber",
+    "b": "drink"
+  }
+]
