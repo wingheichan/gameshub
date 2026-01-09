@@ -24,3 +24,14 @@ button.ghost { background:transparent; color:var(--muted); border:1px dashed var
 .answer-btn.correct { background: color-mix(in srgb, var(--primary), white 20%); border-color: var(--primary); color:#0b1d0b; }
 .answer-btn.incorrect { background: color-mix(in srgb, var(--danger), white 20%); border-color: var(--danger); color:#220606; }
 .progress-row { display:flex; justify-content:space-between; align-items:center; margin:.75rem 0; }
+.stats { display:flex; gap:1rem; color:var(--muted); margin-top:.5rem; }
+.grid { display:grid; gap:.5rem; margin-top:.75rem; }
+.grid.easy { grid-template-columns: repeat(4, 1fr); }
+.grid.medium { grid-template-columns: repeat(5, 1fr); }
+.grid.hard { grid-template-columns: repeat(6, 1fr); }
+.card-tile { border:1px solid var(--border); border-radius:.5rem; background:var(--surface); color:var(--text); cursor:pointer; height:100px; display:flex; align-items:center; justify-content:center; font-weight:600; }
+.card-tile.flipped { background: var(--accent); color:#fff; }
+.card-tile.matched { background: var(--primary); color:#fff; border-color: var(--primary); }
+.card-tile.preview-lock { pointer-events: none; cursor: not-allowed; }
+.answer-btn:focus, .card-tile:focus, .tab-btn:focus, .icon-btn:focus, button:focus, select:focus, input:focus { outline:2px solid #38bdf8; outline-offset:2px; }
+footer { text-align: center; }
