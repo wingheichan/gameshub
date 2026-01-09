@@ -1,50 +1,33 @@
-[
-  {
-    "a": "perro",
-    "b": "dog"
+
+{
+  "vocab_es_en": {
+    "lesson_1": [
+      { "a": "perro", "b": "dog" },
+      { "a": "gato", "b": "cat" },
+      { "a": "casa", "b": "house" },
+      { "a": "libro", "b": "book" }
+    ],
+    "lesson_2": [
+      { "a": "rojo", "b": "red" },
+      { "a": "verde", "b": "green" },
+      { "a": "azul", "b": "blue" },
+      { "a": "escuela", "b": "school" }
+    ]
   },
-  {
-    "a": "gato",
-    "b": "cat"
+  "vocab_fr_en": {
+    "lesson_1": [
+      { "a": "chien", "b": "dog" },
+      { "a": "chat", "b": "cat" },
+      { "a": "maison", "b": "house" },
+      { "a": "livre", "b": "book" }
+    ]
   },
-  {
-    "a": "casa",
-    "b": "house"
-  },
-  {
-    "a": "libro",
-    "b": "book"
-  },
-  {
-    "a": "rojo",
-    "b": "red"
-  },
-  {
-    "a": "verde",
-    "b": "green"
-  },
-  {
-    "a": "azul",
-    "b": "blue"
-  },
-  {
-    "a": "escuela",
-    "b": "school"
-  },
-  {
-    "a": "maestro",
-    "b": "teacher"
-  },
-  {
-    "a": "estudiante",
-    "b": "student"
-  },
-  {
-    "a": "comer",
-    "b": "eat"
-  },
-  {
-    "a": "beber",
-    "b": "drink"
+  "symbols_matching": {
+    "basic": [
+      { "a": "★", "b": "star" },
+      { "a": "♥", "b": "heart" },
+      { "a": "♣", "b": "club" },
+      { "a": "♦", "b": "diamond" }
+    ]
   }
-]
+}
