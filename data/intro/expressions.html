@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title> French words - Essential Greetings </title>
+  <link rel="stylesheet" href="../../css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <h1>  French words - Essential Greetings — Quiz Intro </h1>
+    <nav aria-label="Breadcrumb">
+      <a class="tab-btn" href="../../index.html">🏠 Home</a>
+      <div class="spacer"></div>
+      <button id="themeToggle" class="icon-btn" aria-label="Toggle dark mode">🌗</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="panel">
+      <h2>How this quiz works</h2>
+      <ol>
+        <li>Read each question and choose the correct answer.</li>
+        <li>Correct choice turns <strong>green</strong>; wrong choice turns <strong>red</strong>.</li>
+        <li>Click <em>Next</em> to move on.</li>
+      </ol>
+     
+      <h3><strong>Polite Expressions (La Politesse) 🙏</strong></h3>
+      <p>Using these French words generously is the easiest way to make a great impression.</p>
+      <ol>
+        <li>S&#8217;il vous plaît (seel voo play) &#8211; Please (formal)</li>
+        <li>S&#8217;il te plaît (seel tuh play) &#8211; Please (informal)</li>
+        <li>Merci (mehr-see) &#8211; Thank you</li>
+        <li>Merci beaucoup (mehr-see boh-koo) &#8211; Thank you very much</li>
+        <li>De rien (duh ree-ahn) &#8211; You&#8217;re welcome (casual)</li>
+        <li>Je vous en prie (zhuh voo-zohn pree) &#8211; You&#8217;re welcome (formal)</li>
+        <li>Il n&#8217;y a pas de quoi (eel nyah pah duh kwah) &#8211; Don&#8217;t mention it/It&#8217;s nothing.</li>
+        <li>Pardon (pahr-dohn) &#8211; Pardon me/Sorry (for bumping into someone)</li>
+        <li>Excusez-moi (ex-kew-zay mwah) &#8211; Excuse me (to get attention)</li>
+        <li>Je suis désolé(e) (zhuh swee day-zoh-lay) &#8211; I am sorry (for a mistake/bad news)</li>
+        <li>Ce n&#8217;est pas grave (suh nay pah grahv) &#8211; It&#8217;s not a big deal/No problem.</li>
+        <li>Avec plaisir (ah-vek play-zeer) &#8211; With pleasure.</li>
+        <li>Volontiers (voh-lohn-tyay) &#8211; Gladly/Willingly.</li>
+        <li>Santé! (sahn-tay) &#8211; Cheers! (to your health)</li>
+        <li>Tchin-tchin! (cheen-cheen) &#8211; Cheers! (clinking glasses)</li>
+        <li>Bon appétit! (bun ah-pay-tee) &#8211; Enjoy your meal!</li>
+        <li>À vos souhaits! (ah voh sway) &#8211; Bless you! (after a sneeze, formal)</li>
+        <li>À tes souhaits! (ah tay sway) &#8211; Bless you! (informal)</li>
+      </ol>
+
+    </section>
+
+    <section class="panel">
+      <h3>Example questions for this subcategory</h3>
+      <div id="previewList" aria-live="polite"></div>
+      <div class="actions">
+        <button id="beginQuizBtn" class="primary">Start the quiz</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><small>© <span id="year"></span> Learning Games</small></footer>
+
+  <script>
+    (function(){
+      const yearEl = document.getElementById('year'); if (yearEl) yearEl.textContent = new Date().getFullYear();
+      const themeToggle = document.getElementById('themeToggle');
+      const stored = localStorage.getItem('theme'); if (stored === 'light') document.body.classList.add('light');
+      themeToggle && themeToggle.addEventListener('click', () => { document.body.classList.toggle('light'); localStorage.setItem('theme', document.body.classList.contains('light') ? 'light' : 'dark'); });
+    })();
+  </script>
+  <script src="../../js/intro-loader.js"></script>
+</body>
+</html>
