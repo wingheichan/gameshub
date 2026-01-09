@@ -36,6 +36,17 @@
     <section id="memory" class="tab" aria-labelledby="Memory" hidden>
       <div class="panel">
         <div class="controls">
+          
+          <!-- Category -->
+          <label for="memoryCategory">Category</label>
+          <select id="memoryCategory" aria-label="Memory category"></select>
+        
+          <!-- Subcategory -->
+          <label for="memorySubcategory">Subcategory</label>
+          <select id="memorySubcategory" aria-label="Memory subcategory"></select>
+
+          
+          <!-- Difficulty -->
           <label for="memoryDifficulty">Difficulty</label>
           <select id="memoryDifficulty" aria-label="Select memory difficulty">
             <option value="easy">Easy (4×4)</option>
@@ -43,6 +54,7 @@
             <option value="hard">Hard (6×6)</option>
           </select>
 
+          <!-- Mode -->
           <label for="memoryMode">Mode</label>
           <select id="memoryMode" aria-label="Select game mode">
             <option value="closed" selected>Closed</option>
@@ -50,6 +62,7 @@
             <option value="always-open">Always open</option>
           </select>
 
+          <!-- Preview duration -->
           <label for="previewDuration">Preview Duration (sec)</label>
           <input id="previewDuration" type="number" min="5" max="30" value="10" aria-label="Preview duration in seconds" />
 
