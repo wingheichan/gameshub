@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Learning Games • Home</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <h1>Learning Games</h1>
+    <nav aria-label="Primary">
+      <button class="tab-btn" data-tab="quiz" aria-controls="quiz" aria-selected="true">Quiz</button>
+      <button class="tab-btn" data-tab="memory" aria-controls="memory" aria-selected="false">Memory</button>
+      <div class="spacer"></div>
+      <button id="themeToggle" class="icon-btn" aria-label="Toggle dark mode">🌗</button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="quiz" class="tab active" aria-labelledby="Quiz">
+      <div class="panel">
+        <div class="controls">
+          <label for="quizCategory">Category</label>
+          <select id="quizCategory" aria-label="Select quiz category"></select>
+          <label for="quizSubcategory">Subcategory</label>
+          <select id="quizSubcategory" aria-label="Select quiz subcategory"></select>
+          <button id="goToIntroBtn" class="primary">Start Quiz</button>
+        </div>
+        <div id="quizStatus" class="status" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <section id="memory" class="tab" aria-labelledby="Memory" hidden>
+      <div class="panel"><p>Memory game unchanged in this update.</p></div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><small>© <span id="year"></span> Learning Games</small></footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/quiz-home.js"></script>
+</body>
+</html>
