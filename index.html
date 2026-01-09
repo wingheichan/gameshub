@@ -32,8 +32,40 @@
       </div>
     </section>
 
+    <!-- MEMORY -->
     <section id="memory" class="tab" aria-labelledby="Memory" hidden>
-      <div class="panel"><p>Memory game unchanged in this update.</p></div>
+      <div class="panel">
+        <div class="controls">
+          <label for="memoryDifficulty">Difficulty</label>
+          <select id="memoryDifficulty" aria-label="Select memory difficulty">
+            <option value="easy">Easy (4×4)</option>
+            <option value="medium">Medium (5×4)</option>
+            <option value="hard">Hard (6×6)</option>
+          </select>
+
+          <label for="memoryMode">Mode</label>
+          <select id="memoryMode" aria-label="Select game mode">
+            <option value="closed" selected>Closed</option>
+            <option value="preview">Preview then close</option>
+            <option value="always-open">Always open</option>
+          </select>
+
+          <label for="previewDuration">Preview Duration (sec)</label>
+          <input id="previewDuration" type="number" min="5" max="30" value="10" aria-label="Preview duration in seconds" />
+
+          <button id="startMemoryBtn" class="primary">Start Game</button>
+        </div>
+        <div id="memoryStatus" class="status" aria-live="polite"></div>
+        <div class="stats">
+          <span id="movesCount">Moves: 0</span>
+          <span id="timer">Time: 0s</span>
+          <span id="matchedPairs">Matched: 0</span>
+        </div>
+        <div id="grid" class="grid" aria-label="Memory card grid" role="grid"></div>
+        <div class="actions">
+          <button id="restartMemoryBtn" class="ghost" hidden>Restart</button>
+        </div>
+      </div>
     </section>
   </main>
 
@@ -41,5 +73,6 @@
 
   <script src="js/main.js"></script>
   <script src="js/quiz-home.js"></script>
+  <script src="js/memory.js"></script>
 </body>
 </html>
