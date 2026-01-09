@@ -7,7 +7,9 @@
     'multiplication': { cat: 'math', sub: 'multiplication' },
     'lesson_1': { cat: 'vocab_es_en', sub: 'lesson_1' },
     'lesson_2': { cat: 'vocab_es_en', sub: 'lesson_2' },
-    'lesson_3': { cat: 'vocab_es_en', sub: 'lesson_3' }
+    'lesson_3': { cat: 'vocab_es_en', sub: 'lesson_3' },
+    'greetings': { cat: 'French writingbeginner', sub: 'greetings' },
+    'expressions': { cat: 'French writingbeginner', sub: 'expressions' }
   };
   const sel = MAP[file];
   const previewList = document.getElementById('previewList');
