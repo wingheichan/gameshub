@@ -24,7 +24,7 @@
     ]
   },
  "French writingbeginner": {
-   "Greetings": [
+   "greetings": [
      { "question" : "Translate to English: 'Bonne journée'", "options": ["Goodbye", "Have a good day", "Welcome", "Good evening"], "answer": "Have a good day" },
      { "question" : "Translate to English: 'À bientôt'", "options": ["Good night", "See you soon", "And you?", "Until next time"], "answer": "See you soon" },
      { "question" : "Translate to English: 'À tout à l’heure'", "options": ["See you in a bit (if meeting later the same day)", "Hi/Bye (casual)", "I’m doing well, thank you.", "Delighted to meet you"], "answer": "See you in a bit" },
@@ -39,7 +39,7 @@
      { "question" : "Translate to English: 'À plus tard'", "options": ["I’m doing well, thank you", "See you later", "Delighted to meet you", "Good evening"], "answer": "See you later" },
      { "question" : "Translate to English: 'Bonne soirée'", "options": ["Have a good evening", "Until next time", "Hello/Good day", "See you soon"], "answer": "Have a good evening" }
    ],
-   "Expressions": [
+   "expressions": [
      { "question": "S’il vous plaît", "options": ["Thank you", "Please (formal)", "You’re welcome (casual)", "Excuse me (to get attention)"], "answer": "Please (formal)" },
      { "question": "De rien (duh ree-ahn)", "options": ["Don’t mention it/It’s nothing", "You’re welcome (casual)", "Gladly/Willingly", "Bless you! (informal)"], "answer": "You’re welcome (casual)" },
      { "question": "Avec plaisir", "options": ["Thank you", "Please (formal)", "With pleasure", "Cheers!"], "answer": "With pleasure" },
