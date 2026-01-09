@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title> French words - Essential Greetings </title>
+  <link rel="stylesheet" href="../../css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <h1>  French words - Essential Greetings — Quiz Intro </h1>
+    <nav aria-label="Breadcrumb">
+      <a class="tab-btn" href="../../index.html">🏠 Home</a>
+      <div class="spacer"></div>
+      <button id="themeToggle" class="icon-btn" aria-label="Toggle dark mode">🌗</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="panel">
+      <h2>How this quiz works</h2>
+      <ol>
+        <li>Read each question and choose the correct answer.</li>
+        <li>Correct choice turns <strong>green</strong>; wrong choice turns <strong>red</strong>.</li>
+        <li>Click <em>Next</em> to move on.</li>
+      </ol>
+     
+      <h3><strong>Essential Greetings (Les Salutations) 🗣️</strong></h3>
+      <p>These are the first French words out of your mouth in any conversation, so let&#8217;s make them second nature.</p>
+      <ol>
+        <li>Bonjour (bohn-zhoor) &#8211; Hello/Good day</li>
+        <li>Bonsoir (bohn-swahr) &#8211; Good evening</li>
+        <li>Salut (sah-loo) &#8211; Hi/Bye (casual)</li>
+        <li>Au revoir (oh ruh-vwahr) &#8211; Goodbye</li>
+        <li>Bonne journée (bun zhoor-nay) &#8211; Have a good day</li>
+        <li>Bonne soirée (bun swah-ray) &#8211; Have a good evening</li>
+        <li>Bonne nuit (bun nwee) &#8211; Good night</li>
+        <li>À bientôt (ah bee-ahn-toh) &#8211; See you soon</li>
+        <li>À plus tard (ah ploo tahr) &#8211; See you later</li>
+        <li>À tout à l&#8217;heure (ah too tah luhr) &#8211; See you in a bit (if meeting later the same day)</li>
+        <li>À demain (ah duh-mahn) &#8211; See you tomorrow</li>
+        <li>Ça va? (sah vah) &#8211; How are you? (informal)</li>
+        <li>Comment allez-vous? (kom-mohn-tah-lay-voo) &#8211; How are you? (formal/plural)</li>
+        <li>Ça va bien, merci (sah vah bee-ahn, mehr-see) &#8211; I&#8217;m doing well, thank you.</li>
+        <li>Pas mal (pah mahl) &#8211; Not bad.</li>
+        <li>Et toi? (ay twah) &#8211; And you? (informal)</li>
+        <li>Et vous? (ay voo) &#8211; And you? (formal)</li>
+        <li>Bienvenue (bee-ahn-vuh-noo) &#8211; Welcome (as in, welcome to this place)</li>
+        <li>Enchanté(e) (ohn-shahn-tay) &#8211; Delighted to meet you.</li>
+        <li>À la prochaine (ah lah pro-shen) &#8211; Until next time.</li>
+      </ol>
+
+    </section>
+
+    <section class="panel">
+      <h3>Example questions for this subcategory</h3>
+      <div id="previewList" aria-live="polite"></div>
+      <div class="actions">
+        <button id="beginQuizBtn" class="primary">Start the quiz</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><small>© <span id="year"></span> Learning Games</small></footer>
+
+  <script>
+    (function(){
+      const yearEl = document.getElementById('year'); if (yearEl) yearEl.textContent = new Date().getFullYear();
+      const themeToggle = document.getElementById('themeToggle');
+      const stored = localStorage.getItem('theme'); if (stored === 'light') document.body.classList.add('light');
+      themeToggle && themeToggle.addEventListener('click', () => { document.body.classList.toggle('light'); localStorage.setItem('theme', document.body.classList.contains('light') ? 'light' : 'dark'); });
+    })();
+  </script>
+  <script src="../../js/intro-loader.js"></script>
+</body>
+</html>
